@@ -1,0 +1,92 @@
+/* IMPORTAÇÃO DE FONTES VIA GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* RESET BÁSICO */
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    text-align: center;
+    background-color: #46CCCD;
+}
+
+header{
+    padding: 20px;
+    color: #F8F298;
+    background-color: #47bebe; 
+    font-family: "Bebas Neue", sans-serif; /* Alterando a fonte */
+    font-size: 25px;
+}
+
+nav{
+    background-color: #47bebe;
+}
+
+nav a{
+    display: inline-block; /* DEIXA OS ITENS LADO A LADO */
+    margin: 15px; /* DÁ O ESPAÇO EXTERNO ENTRE OS ITENS */
+    padding: 10px 20px; /* DÁ O ESPAÇO INTERNO */
+    text-decoration: none; /* TIRA O UNDERLINE */
+    border-radius: 10px;
+    background-color: #46CCCD;
+    color: white;
+}
+
+nav a:hover{ /* MUDA PARA ESSAS PROPRIEDADES QUANDO O MOUSE PASSA POR CIMA */
+    background-color: #D8F4F2;
+    color: black;
+}
+
+.card{ /* ARTICLE DOS CARDS DE PERSONAGEM */
+    display: inline-block; /* DEIXA OS ITENS DO LADO DO OUTRO */
+    width: 250px;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #D8F4F2;
+}
+
+.card img{
+    width: 100%; /* ESSE VALOR DESCONTA O PADDING ADICIONADO NO CARD */
+    border-radius: 12px;
+    object-fit: cover; /* COLOCA A IMAGEM DO TAMANHO DESEJADO SEM DISTORCER */
+}
+
+#personagens{
+    background-image: url(./imagens/banner.png);
+    background-size: cover;
+
+    /* PARA ALTERAR O TAMANHO DA IMAGEM USAR O BACKGROUND-SIZE = COVER / CONTAIN.
+    PARA A IMAGEM NÃO REPETIR VÁRIAS VEZES BACKGROUND-REPEAT=NO-REPEAT
+    PARA MUDAR A POSIÇÃO DA IMAGEM USA BACKGROUD-POSITION:CENTER */
+}
+
+#personagens h2{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    padding: 20px;
+}
+
+#secao-temporadas{
+    margin: 30px;
+    padding: 15px;
+}
+
+.temporada{
+    display: inline-block; /* Ativar os displays para os cards */
+    width: 560px;
+    border-radius: 12px;
+    padding-top: 20px;
+    background-color: #D8F4F2;
+    margin: 20px;
+    padding: 15px;
+}
+
+.temporada img{
+    width: 100%;
+    border-radius: 12px;
+}
