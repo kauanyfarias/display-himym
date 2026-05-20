@@ -11,6 +11,7 @@
 body{
     text-align: center;
     background-color: #46CCCD;
+    font-size: arial sans-serif;
 }
 
 header{
@@ -89,4 +90,20 @@ nav a:hover{ /* MUDA PARA ESSAS PROPRIEDADES QUANDO O MOUSE PASSA POR CIMA */
 .temporada img{
     width: 100%;
     border-radius: 12px;
+}
+
+footer{
+    background-color: #47bebe;
+    padding: 12px 0;
+    
+}
+
+footer p{
+    font-weight: bold;
+    font-size: 20px;
+    margin: auto;
+}
+
+footer img{
+    width: 30px;
 }
