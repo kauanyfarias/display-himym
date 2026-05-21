@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personagens</title>
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./personagens.css">
     <link rel="shortcut icon" href="./imagens/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header>
@@ -26,8 +26,9 @@
                     <p>N°0001</p>
                     <h3>Ted Mosby</h3>
                     <div class="tags">
-                        <span>O apaixonado</span>
-                        <span>Arquiteto</span>
+                        <!-- Deixar o nome separado faz com que ele tenha duas classe: tag e ted. Assim no CSS é possível chamar as duas separadas para o mesmo arquivo -->
+                        <span class="tag ted">O apaixonado</span>
+                        <span class="tag profissao">Arquiteto</span>
                     </div>
                 </article>
                 <article class="item">
@@ -35,8 +36,8 @@
                     <p>N°0002</p>
                     <h3>Robin Scherbatsky</h3>
                     <div class="tags">
-                        <span>A canadense</span>
-                        <span>Jornalista</span>
+                        <span class="tag robin">A canadense</span>
+                        <span class="tag profissao">Jornalista</span>
                     </div>
                 </article>
                 <article class="item">
@@ -44,8 +45,8 @@
                     <p>N°0003</p>
                     <h3>Lily Aldrin</h3>
                     <div class="tags">
-                        <span>A professora</span>
-                        <span>Artista</span>
+                        <span class="tag lily">A extrovertida</span>
+                        <span class="tag profissao">Artista</span>
                     </div>
                 </article>
                 <article class="item">
@@ -53,8 +54,8 @@
                     <p>N°0004</p>
                     <h3>Marshall Eriksen</h3>
                     <div class="tags">
-                        <span>O melhor amigo</span>
-                        <span>Advogado</span>
+                        <span class="tag marshall">O amigo</span>
+                        <span class="tag profissao">Advogado</span>
                     </div>
                 </article>
                 <article class="item">
@@ -62,8 +63,8 @@
                     <p>N°0005</p>
                     <h3>Barney Stinson</h3>
                     <div class="tags">
-                        <span>Cara do terno</span>
-                        <span>PLEASE</span>
+                        <span class="tag barney">Cara do terno</span>
+                        <span class="tag profissao">PLEASE</span>
                     </div>
                 </article>
                 <article class="item">
@@ -71,8 +72,8 @@
                     <p>N°0006</p>
                     <h3>Tracy McConnell</h3>
                     <div class="tags">
-                        <span>A Mãe</span>
-                        <span>Baixista</span>
+                        <span class="tag tracy">A Mãe</span>
+                        <span class="tag profissao">Baixista</span>
                     </div>
                 </article>
                 <article class="item">
@@ -80,8 +81,8 @@
                     <p>N°0007</p>
                     <h3>Victoria</h3>
                     <div class="tags">
-                        <span>Namorada 1</span>
-                        <span>Confeiteira</span>
+                        <span class="tag victoria">Namorada 1</span>
+                        <span class="tag profissao">Confeiteira</span>
                     </div>
                 </article>
                 <article class="item">
@@ -89,8 +90,8 @@
                     <p>N°0008</p>
                     <h3>Zoey</h3>
                     <div class="tags">
-                        <span>Namorada 2</span>
-                        <span>Ativista</span>
+                        <span class="tag zoey">Namorada 2</span>
+                        <span class="tag profissao">Ativista</span>
                     </div>
                 </article>
             </div>

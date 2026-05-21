@@ -11,7 +11,7 @@
 body{
     text-align: center;
     background-color: #46CCCD;
-    font-size: arial sans-serif;
+    font-family: arial, sans-serif;
 }
 
 header{
@@ -75,6 +75,7 @@ nav a:hover{ /* MUDA PARA ESSAS PROPRIEDADES QUANDO O MOUSE PASSA POR CIMA */
 #secao-temporadas{
     margin: 30px;
     padding: 15px;
+    margin: auto;    
 }
 
 .temporada{
@@ -106,4 +107,11 @@ footer p{
 
 footer img{
     width: 30px;
+}
+
+/* MEDIA QUERY */
+@media (max-width:650px) {
+    .temporada{
+        max-width: 400px;
+    }
 }

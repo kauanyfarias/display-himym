@@ -3,3 +3,125 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body{
+    font-family: arial, sans-serif;
+}
+
+/* Alterando o estilo da seção */
+#personagem{
+    padding: 50px 20px;
+}
+
+#personagem h2{
+    font-family: "Bebas Neue", sans-serif; /* Alterando a fonte */
+    font-size: 40px;
+    color: #f1f1f1;
+    margin-bottom: 40px;
+}
+
+.container-personagem{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch; /* deixa os itens com a mesma altura, "esticado" com o tamanho do container */
+    gap: 20px;
+}
+
+.item{
+    background-color: #f5df76;
+    width: 250px;
+    border-radius: 10px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.item:hover{
+    transform: translateY(-5px);
+    transition: .3s;
+    box-shadow: 0 0 10px rgb(255, 208, 0);
+}
+
+.item:active{
+    transform: scale(0.9);
+    transition: .2s;
+}
+
+.item img{
+    width: 100%;
+    height: 240px;
+    /* Evita a distorção da imagem */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.item p{
+    font-weight: bold;
+}
+
+.tags{
+    display: flex;
+    flex-direction: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.tag{
+    padding: 8px 14px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    display: inline-block;
+    color: white;
+}
+
+.profissao{
+    background-color: #3c9e9e;
+}
+
+.ted{
+    background-color: rgb(112, 107, 113);
+}
+
+.robin{
+    background-color: rgb(81, 47, 102);
+}
+
+.lily{
+    background-color: rgb(181, 15, 75);
+}
+
+.marshall{
+    background-color: rgb(42, 44, 73);
+}
+
+.barney{
+    background-color: rgb(22, 21, 20);
+}
+
+.tracy{
+    background-color: rgb(23, 25, 63);
+}
+
+.victoria{
+    background-color: rgb(39, 67, 94);
+}
+
+.zoey{
+    background-color: rgb(68, 45, 14);
+}
+
+@media (max-width:600px){
+    #personagem h2{
+        color: black;
+    }
+
+    .item{
+        width: 100%;
+        max-width: 320px;
+    }
+}
