@@ -115,7 +115,7 @@ body{
     background-color: rgb(68, 45, 14);
 }
 
-@media (max-width:600px){
+@media (max-width:700px){
     #personagem h2{
         color: black;
     }
